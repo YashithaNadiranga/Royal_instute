@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.royalinstitute.controller.RegisterStudentController">
+   <children>
+      <JFXTextField fx:id="txtsid" labelFloat="true" layoutX="56.0" layoutY="87.0" prefHeight="26.0" prefWidth="202.0" promptText="Student Id" />
+      <JFXTextField fx:id="txtsname" labelFloat="true" layoutX="342.0" layoutY="87.0" prefHeight="26.0" prefWidth="309.0" promptText="Name" />
+      <JFXTextField fx:id="txtsAddress" labelFloat="true" layoutX="56.0" layoutY="135.0" prefHeight="26.0" prefWidth="596.0" promptText="Address" />
+      <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="56.0" layoutY="184.0" prefHeight="26.0" prefWidth="210.0" promptText="Contact" />
+      <JFXComboBox fx:id="cmbGender" layoutX="56.0" layoutY="242.0" prefHeight="26.0" prefWidth="209.0" promptText="Gender">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Male" />
+               <String fx:value="Female" />
+            </FXCollections>
+
+         </items>
+      </JFXComboBox>
+      <Label layoutX="262.0" layoutY="28.0" prefHeight="18.0" prefWidth="194.0" text="Student Details">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="234.0" layoutY="280.0" prefHeight="34.0" prefWidth="250.0" text="Registration Details">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpDob" layoutX="347.0" layoutY="200.0" prefHeight="26.0" prefWidth="310.0" promptText="DOB" />
+      <JFXTextField fx:id="txtregfee" labelFloat="true" layoutX="392.0" layoutY="347.0" prefHeight="26.0" prefWidth="265.0" promptText="Reg Fee" />
+      <DatePicker fx:id="dpregDate" layoutX="56.0" layoutY="347.0" prefHeight="26.0" prefWidth="210.0" promptText="RegDate" />
+      <JFXComboBox fx:id="cmbCourse" layoutX="56.0" layoutY="406.0" prefHeight="26.0" prefWidth="209.0" promptText="Course" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="58.0" layoutY="464.0" onAction="#saveStudent" prefHeight="26.0" prefWidth="608.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Save" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="558.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.royalinstitute.controller.ViewStudentController">
+   <children>
+      <TableView fx:id="tblstudent" layoutX="30.0" layoutY="151.0" prefHeight="344.0" prefWidth="633.0">
+         <columns>
+            <TableColumn prefWidth="71.19994926452637" text="ID" />
+            <TableColumn prefWidth="97.60001373291016" text="Name" />
+            <TableColumn prefWidth="131.20001220703125" text="Address" />
+            <TableColumn prefWidth="99.199951171875" text="Contact" />
+            <TableColumn prefWidth="135.19998168945312" text="DOB" />
+            <TableColumn prefWidth="138.39996337890625" text="Gender" />
+         </columns>
+      </TableView>
+      <JFXComboBox layoutX="30.0" layoutY="51.0" prefHeight="26.0" prefWidth="290.0" promptText="Select Course" />
+      <JFXComboBox layoutX="392.0" layoutY="52.0" prefHeight="26.0" prefWidth="269.0" promptText="Select Batch" />
+   </children>
+</AnchorPane>

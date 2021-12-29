@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="593.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.royalinstitute.controller.AddCourseController">
+   <children>
+      <JFXTextField fx:id="lblCid" layoutX="36.0" layoutY="99.0" prefHeight="26.0" prefWidth="655.0" promptText="Course ID" />
+      <JFXTextField fx:id="lblCDur" layoutX="36.0" layoutY="243.0" prefHeight="26.0" prefWidth="655.0" promptText="Course Duration" />
+      <JFXTextField fx:id="lblCtype" layoutX="36.0" layoutY="197.0" prefHeight="26.0" prefWidth="655.0" promptText="Course Type" />
+      <JFXTextField fx:id="lblCname" layoutX="36.0" layoutY="152.0" prefHeight="26.0" prefWidth="655.0" promptText="Course Name" />
+      <TableView fx:id="tblCourse" layoutX="36.0" layoutY="356.0" prefHeight="200.0" prefWidth="655.0">
+        <columns>
+          <TableColumn prefWidth="138.40002822875977" text="Course ID" />
+          <TableColumn prefWidth="196.7999725341797" text="Course Name" />
+            <TableColumn prefWidth="180.79998779296875" text="CourseType" />
+            <TableColumn prefWidth="139.199951171875" text="Course Duration" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="36.0" layoutY="296.0" onAction="#AddCourse" prefHeight="26.0" prefWidth="655.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Save" />
+      <Label layoutX="272.0" layoutY="38.0" prefHeight="18.0" prefWidth="194.0" text="Course Details">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
